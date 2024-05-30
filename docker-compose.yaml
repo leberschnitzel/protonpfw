@@ -1,0 +1,4 @@
+  protonpfw:
+    image: leberschnitzel/protonpfw
+    container_name: protonpfw
+    restart: unless-stopped

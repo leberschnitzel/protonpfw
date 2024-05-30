@@ -6,4 +6,8 @@ cd "$(python3 -m pip show py-natpmp | grep Location | cut -d\  -f 2)/natpmp" && 
 ```
 
 Container Output example:
-![image](https://github.com/leberschnitzel/protonpfw/assets/39628021/b668661c-0005-44cb-a305-c1dacecccd62)
+![image](https://github.com/leberschnitzel/protonpfw/assets/39628021/c9cf2627-9e22-4b31-ad3a-6f30289da9e3)
+
+You can use this output and put the port into wherever you need portforwarding.
+
+If you are more skilled than me, you can probably automate it and take the port directly into a config :)

@@ -1,3 +1,21 @@
+  Deluge:
+    container_name: deluge
+    image: lscr.io/linuxserver/deluge:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Zurich
+      - DELUGE_LOGLEVEL=error #optional
+    volumes:
+      - /your/deluge/config:/config
+      - /your/deluge/data/:/data
+    ports:
+      - 8112:8112
+      - 6881:6881
+      - 6881:6881/udp
+      - 58846:58846 #optional
+    restart: unless-stopped
+
   protonpfw:
     image: leberschnitzel/protonpfw
     container_name: protonpfw

@@ -11,4 +11,4 @@ Container Output example:
 
 You can use this output and put the port into wherever you need portforwarding.
 
-If you are more skilled than me, you can probably automate it and take the port directly into a config :)
+This branche will implement directly with deluge in the future

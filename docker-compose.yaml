@@ -18,8 +18,8 @@ services:
   restart: unless-stopped
 
   protonpfw:
-    image: leberschnitzel/protonpfw
+    image: leberschnitzel/protonpfw:deluge
     container_name: protonpfw
     restart: unless-stopped
-    depends_on:
-     - Deluge
+    volumes:
+      - /your/deluge/config:/config

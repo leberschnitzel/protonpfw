@@ -1,3 +1,4 @@
+services:
   Deluge:
     container_name: deluge
     image: lscr.io/linuxserver/deluge:latest
@@ -14,9 +15,11 @@
       - 6881:6881
       - 6881:6881/udp
       - 58846:58846 #optional
-    restart: unless-stopped
+  restart: unless-stopped
 
   protonpfw:
     image: leberschnitzel/protonpfw
     container_name: protonpfw
     restart: unless-stopped
+    depends_on:
+     - Deluge
